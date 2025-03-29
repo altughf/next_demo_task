@@ -34,7 +34,7 @@ export default function Login() {
       } else {
         setError("Giriş başarısız! Lütfen bilgilerinizi kontrol edin.");
       }
-    } catch (err) {
+    } catch (_) {
       setError("Sunucuya bağlanırken hata oluştu.");
     } finally {
       setLoading(false);
